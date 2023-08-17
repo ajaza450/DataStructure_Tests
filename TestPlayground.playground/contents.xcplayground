@@ -6,5 +6,7 @@
         <page name='Prim Number'/>
         <page name='Test'/>
         <page name='SumEvenNumberOFArray'/>
+        <page name='EvenOddnumbersSeprateArr'/>
+        <page name='Remove duplicate element Array'/>
     </pages>
 </playground>
