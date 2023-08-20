@@ -8,5 +8,6 @@
         <page name='SumEvenNumberOFArray'/>
         <page name='EvenOddnumbersSeprateArr'/>
         <page name='Remove duplicate element Array'/>
+        <page name='Fine numbers of duplicate element'/>
     </pages>
 </playground>

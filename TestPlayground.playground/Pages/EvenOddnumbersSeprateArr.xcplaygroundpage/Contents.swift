@@ -45,3 +45,13 @@ func arrangeEvenOdd( arr: inout [Int]) {
 
 arrangeEvenOdd(arr: &array)
 print(array) // Output: [4, 2, 3, 1, 5]
+
+
+var left = 0
+var right = arr.count - 1
+
+
+let occurrences = array.reduce(into: [], { partialResult, number in
+    partialResult[number,default : 0] += 1
+})
+print("occurrences",occurrences)
