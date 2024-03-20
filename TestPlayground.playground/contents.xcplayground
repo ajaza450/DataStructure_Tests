@@ -8,6 +8,11 @@
         <page name='SumEvenNumberOFArray'/>
         <page name='EvenOddnumbersSeprateArr'/>
         <page name='Remove duplicate element Array'/>
-        <page name='Fine numbers of duplicate element'/>
+        <page name='Find numbers of duplicate element'/>
+        <page name='AddAndMultiStrNumber'/>
+        <page name='Find non repeted Alfabet'/>
+        <page name='Find missing Number from n'/>
+        <page name='Find Second Largest num'/>
+        <page name='Find middel num of 2 arrays'/>
     </pages>
 </playground>
