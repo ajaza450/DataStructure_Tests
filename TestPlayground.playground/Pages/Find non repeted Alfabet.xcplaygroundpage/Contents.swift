@@ -47,3 +47,21 @@ if let result = firstNonRepeatingCharacter(inputString) {
 } else {
     print("No non-repeating character found.")
 }
+
+
+
+func nonRepeatedElements<T: Sequence>(elements: T)-> [T.Element] where T.Element: Hashable{
+    var array = [T.Element: Int]()
+    
+    for element in elements {
+        array[element,default: 0] += 1
+    }
+    let nonRepeated = array.filter({$0.value == 1}).map({$0.key})
+    
+    return nonRepeated
+    
+    
+}
+
+let nonRepeatedString = nonRepeatedElements(elements: inputString)
+print("nonRepeatedString",nonRepeatedString.first ?? "")

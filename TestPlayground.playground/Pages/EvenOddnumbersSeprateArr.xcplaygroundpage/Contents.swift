@@ -4,7 +4,7 @@ import Foundation
 
 var greeting = "Hello, playground"
 
-//: [Next](@next)
+//: [Next](@next) Even number one side and odd number other side
 
 var array = [1,24,2,3,5,5]
 

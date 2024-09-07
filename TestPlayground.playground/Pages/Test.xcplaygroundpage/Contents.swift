@@ -6,184 +6,177 @@ prefix func +(s:Int){
     
 }
 /*
-//let a = ["1","t",nil]
-//print(a.compactMap{Int($0 ?? "0")})
+ let a = ["1","t",nil]
+ print(a.compactMap{Int($0 ?? "0")})
+*/
 
+/*
+class A {
+    var f = "" {
+        didSet{
+            print("Hello \(f)")
+        }
+    }
+}
+class B: A{
+    override var f: String{
+        didSet{
+            print("Hello override \(f)")
+        }
+    }
+}
 
-//class A {
-//    var f = "" {
-//        didSet{
-//            print("Hello \(f)")
-//        }
-//    }
-//}
-//class B: A{
-//    override var f: String{
-//        didSet{
-//            print("Hello override \(f)")
-//        }
-//    }
-//}
-//
-//let vc = B()
-//vc.f = "X"
-//vc.f = "D"
-
-//class Frut {
-//    var name = "Apple"{
-//        willSet{
-//            self.name = "Banana"
-//        }
-//        didSet{
-//            self.name = "ch"
-//        }
-//    }
-//
-//
-//    init(){
-//        self.name = "Mad"
-//    }
-//}
-//let x = Frut()
-//print(x.name)
-
-
-//enum Foo: RawRepresentable {
-//    case one case two case three
-//    init?(rawValue: RawValue) {
-//        <#code#>
-//    }
-//}
-
-//
-//func check (a: ()->()){
-//    func a(){
-//        print("TR")
-//    }
-//    a()
-//}
-//func checkadd (y a: ()->()){
-//    func y(){
-//        print("Q")
-//    }
-//    y()
-//}
-//check {
-//    print("s")
-//}
-//checkadd {
-//    print("T")
-//}
+let vc = B()
+vc.f = "X"
+vc.f = "D"
  
-//var di :[String: Int?] = ["a":1,"b":2,"c":nil]
-//print(di.count)
+ */
 
-//let x = 5
-//var re = 0
-//switch x {
-//case 0...5:
-//    re = 1
-//    fallthrough
-//default:
-//    re = 4
-//}
-
-//print(re)
+/*
+class Frut {
+    var name = "Apple"{
+        willSet{
+            self.name = "Banana"
+        }
+        didSet{
+            self.name = "ch"
+        }
+    }
 
 
-// var sAA = [String]()
-//
-//for i in 0...2 where i%2 == 0{
-//    print(i)
-//}
+    init(){
+        self.name = "Mad"
+    }
+}
+let x = Frut()
+print(x.name)
+*/
+/*
 
-//var i = 0
-//var closureArray = [()->()]()
-//for _ in 1...5 {
-//closureArray.append {
-//print(i)
-//}
-//i += 1
-//}
-//// here i will be 5
-//closureArray[0]() // prints 5
-//closureArray[1]() // prints 5
-//closureArray[2]() // prints 5
-//closureArray[3]() // prints 5
-//closureArray[4]() // prints 5
-//
-//
-//var closureArray2 = [()->()]()
-//var j = 0
-//for _ in 1...5 {
-//closureArray2.append { [j] in
-//print(j)
-//}
-//j += 1
-//}
-//// here i will be 5
-//closureArray2[0]() // prints 0
-//closureArray2[1]() // prints 1
-//closureArray2[2]() // prints 2
-//closureArray2[3]() // prints 3
-//closureArray2[4]() // prints 4
-//func doSomethingSynchronous(closure: () -> Void) {
-//    closure()
-//}
-//
-//
-//class StepCounter {
-//    var totalSteps: Int = 0 {
-//        willSet(newTotalSteps) {
-//            print("About to set totalSteps to \(newTotalSteps)")
-//        }
-//        didSet {
-//            if totalSteps > oldValue  {
-//                print("Added \(totalSteps - oldValue) steps")
-//            }
-//        }
-//    }
-//}
-//
-//let stepCounter = StepCounter()
-//stepCounter.totalSteps = 200
-//stepCounter.totalSteps = 100
-//print(stepCounter.totalSteps)
-//
-//
-//@propertyWrapper
-//struct Wrapper<Value> {
-//    var wrappedValue: Value
-//}
-//
-//struct Example1 {
-//    @Wrapper var x: Int
-//}
-//
-//var example = Example1(x: 10)
-//
-//print(example.x) // 10
-//
-//
-////let publisher = Deferred { () -> Just<Int> in 6 print("One") return Just(1) } print("Two") let cancelable = publisher .sink (receiveValue: { _ in print("Three") })
-//class ServerAPI {
-//
-//}
-//
-//private let auth: ServerAuth
-//private var token: AccessToken?
-//
-//init (auth: ServerAuth) {
-//    self.auth = auth}
-//func requestToken( handler: @escaping (Result<AccessToken>) -> Void) {
-//    if let token = token, token.isValid{
-//        handler(.value(token))
-//        return
-//    }
-//    auth.authorize {[weak self] result in
-//         self?.token = result.value
-//        handler(result)
-//    }
+func check (a: ()->()){
+    func a(){
+        print("TR")
+    }
+    a()
+}
+func checkadd (y a: ()->()){
+    func y(){
+        print("Q")
+    }
+    y()
+}
+check {
+    print("s")
+}
+checkadd {
+    print("T")
+}
+*/
+
+/*
+
+
+
+
+
+ 
+var di :[String: Int?] = ["a":1,"b":2,"c":nil]
+print(di.count)
+
+let x = 5
+var re = 0
+switch x {
+case 0...5:
+    re = 1
+    fallthrough
+default:
+    re = 4
+}
+
+print(re)
+
+
+ var sAA = [String]()
+
+for i in 0...2 where i%2 == 0{
+    print(i)
+}
+
+var i = 0
+var closureArray = [()->()]()
+for _ in 1...5 {
+closureArray.append {
+print(i)
+}
+i += 1
+}
+// here i will be 5
+closureArray[0]() // prints 5
+closureArray[1]() // prints 5
+closureArray[2]() // prints 5
+closureArray[3]() // prints 5
+closureArray[4]() // prints 5
+
+
+var closureArray2 = [()->()]()
+var j = 0
+for _ in 1...5 {
+closureArray2.append { [j] in
+print(j)
+}
+j += 1
+}
+// here i will be 5
+closureArray2[0]() // prints 0
+closureArray2[1]() // prints 1
+closureArray2[2]() // prints 2
+closureArray2[3]() // prints 3
+closureArray2[4]() // prints 4
+func doSomethingSynchronous(closure: () -> Void) {
+    closure()
+}
+
+
+class StepCounter {
+    var totalSteps: Int = 0 {
+        willSet(newTotalSteps) {
+            print("About to set totalSteps to \(newTotalSteps)")
+        }
+        didSet {
+            if totalSteps > oldValue  {
+                print("Added \(totalSteps - oldValue) steps")
+            }
+        }
+    }
+}
+
+let stepCounter = StepCounter()
+stepCounter.totalSteps = 200
+stepCounter.totalSteps = 100
+print(stepCounter.totalSteps)
+
+
+
+
+//let publisher = Deferred { () -> Just<Int> in 6 print("One") return Just(1) } print("Two") let cancelable = publisher .sink (receiveValue: { _ in print("Three") })
+class ServerAPI {
+
+}
+
+private let auth: ServerAuth
+private var token: AccessToken?
+
+init (auth: ServerAuth) {
+    self.auth = auth}
+func requestToken( handler: @escaping (Result<AccessToken>) -> Void) {
+    if let token = token, token.isValid{
+        handler(.value(token))
+        return
+    }
+    auth.authorize {[weak self] result in
+         self?.token = result.value
+        handler(result)
+    }
 
 /*
 struct Point {

@@ -14,5 +14,6 @@
         <page name='Find missing Number from n'/>
         <page name='Find Second Largest num'/>
         <page name='Find middel num of 2 arrays'/>
+        <page name='Compound string in an array'/>
     </pages>
 </playground>

@@ -21,7 +21,6 @@ class Signlton{
 //            }
 //
 //        }
-        
         temp = array.reduce(0) { result, number in
             return number % 2 == 0 ? result + number : result
         }

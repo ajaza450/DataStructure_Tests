@@ -18,13 +18,11 @@ var arrInt = [5, 2, 4, 6, 3, 7, 8]
 func findMissingNumber(_ arr: [Int], _ N: Int) -> Int {
     // Calculate the sum of all numbers from 1 to N
     let expectedSum = (N) * (N + 1) / 2
-    
     // Calculate the sum of array elements
     var actualSum = 0
     for num in arr {
         actualSum += num
     }
-    
     // Find the missing number
     let missingNumber = expectedSum - actualSum
     
