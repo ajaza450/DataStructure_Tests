@@ -15,5 +15,8 @@
         <page name='Find Second Largest num'/>
         <page name='Find middel num of 2 arrays'/>
         <page name='Compound string in an array'/>
+        <page name=' how many pairs'/>
+        <page name=' find the subarray And max sum'/>
+        <page name='Find extra Character b\w to strings'/>
     </pages>
 </playground>

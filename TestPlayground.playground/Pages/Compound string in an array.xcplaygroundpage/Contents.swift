@@ -26,7 +26,7 @@ func compount(arr: [String])-> Int{
     for string in arr {
         
         for item in arr {
-            if string != item, string.hasSuffix(item) || string.hasPrefix(item)  {
+            if string == "lightcar" && string != item, string.hasSuffix(item) || string.hasPrefix(item)  {
                 let suffix = String(string.dropFirst(item.count))
                 let prefix = String(string.dropLast(item.count))
                 if arr.contains(suffix) ||  arr.contains(prefix) {
@@ -63,3 +63,5 @@ func compound(arr: [String]) -> Int {
 }
 
 print(compound(arr: ["star", "fish", "starfish", "light","car", "lightcar"]))
+
+
